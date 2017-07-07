@@ -9,7 +9,11 @@ app.set('port', (process.env.PORT || 5000));
 app.use(express.static(path.join(__dirname, 'public')));
 //express routes
 app.get('/', function(req, res){
-  res.sendFile(path.join(__dirname, 'views/adlaon.html'));
+  res.sendFile(path.join(__dirname, 'views/index.html'));
+});
+
+app.get('/ass1', function(req, res){
+  res.sendFile(path.join(__dirname, 'views/ass1.html'));
 });
 
 //express server listen
